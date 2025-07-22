@@ -6,7 +6,7 @@ export default function Home() {
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <Image
           className="dark:invert"
-          src="/next.svg"
+          src="/logo.svg"
           alt="Next.js logo"
           width={180}
           height={38}
@@ -27,7 +27,7 @@ export default function Home() {
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
+            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
             target="_blank"
             rel="noopener noreferrer"
@@ -39,7 +39,6 @@ export default function Home() {
               width={20}
               height={20}
             />
-            Deploy now
           </a>
           <a
             className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
@@ -49,6 +48,45 @@ export default function Home() {
           >
             Read our docs
           </a>
+          <vitrine>
+            <card-product name="Nome do Produto" img-product="" price="" tag="Adocicado" qntd="1" type="avon">
+            </card-product>
+          </vitrine>
+          <div className="rounded-2xl border-2 flex flex-col gap-2 p-5 items-center justify-center w-56">
+            <Image
+              className="dark"
+              src="/vercel.svg"
+              alt="Vercel logomark"
+              width={150}
+              height={150}
+            />
+            <div className="bg-amber-600 w-10 h-0.5"></div>
+            <div className="w-12/12">
+              <h1>Nome do Produto</h1>
+              <p>Tag</p>
+            </div>
+            <div className="flex items-center justify-between w-12/12">
+              <h3 className="text-amber-600">R$ 00,00</h3>
+              <a className="rounded-full border-2">
+                <Image
+                  className=""
+                  src="/vercel.svg"
+                  alt="Vercel logomark"
+                  width={20}
+                  height={20}
+                />
+              </a>
+              <a>
+                <Image
+                  className="dark"
+                  src="/vercel.svg"
+                  alt="Vercel logomark"
+                  width={20}
+                  height={20}
+                />
+              </a>
+            </div>
+          </div>
         </div>
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
